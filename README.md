@@ -27,7 +27,7 @@ composer require codexoft/mobilesasa-sdk
 Initialize the SDK with your credentials:
 
 ```php
-use codexoft\MobilesasaSDK\Mobilesasa;
+use Codexoft\MobilesasaSDK\Mobilesasa;
 
 $config = [
     'senderId' => 'YOUR_SENDER_ID',
