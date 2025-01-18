@@ -1,6 +1,6 @@
 {
     "name": "codexoft/mobilesasa-sdk",
-    "description": "Unofficial PHP SDK for Mobile Sasa's Communication Platform - Integrate bulk SMS, WhatsApp messaging, email services, USSD codes, SMS surveys, and sender ID management for comprehensive business communication solutions",
+    "description": "The Mobilesasa SDK is a PHP library that provides seamless integration with the Mobilesasa API for sending SMS messages, managing contact groups, and conducting mobile surveys. This SDK supports various messaging features including single SMS, bulk SMS, personalized bulk messaging, and delivery status tracking.",
     "type": "library",
     "license": "MIT",
     "autoload": {
