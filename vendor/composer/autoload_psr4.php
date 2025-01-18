@@ -6,5 +6,5 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'codexoft\\MobilesasaSDK\\' => array($baseDir . '/src'),
+    'Codexoft\\MobilesasaSDK\\' => array($baseDir . '/src'),
 );

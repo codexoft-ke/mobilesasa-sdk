@@ -2,20 +2,27 @@
     "name": "codexoft/mobilesasa-sdk",
     "description": "The Mobilesasa SDK is a PHP library that provides seamless integration with the Mobilesasa API for sending SMS messages, managing contact groups, and conducting mobile surveys. This SDK supports various messaging features including single SMS, bulk SMS, personalized bulk messaging, and delivery status tracking.",
     "type": "library",
+    "keywords": [
+        "mobilesasa",
+        "sms",
+        "api",
+        "sdk",
+        "bulk-sms",
+        "mobile-surveys",
+        "contact-groups"
+    ],
+    "homepage": "https://github.com/codexoft/mobilesasa-sdk",
     "license": "MIT",
-    "autoload": {
-        "psr-4": {
-            "codexoft\\MobilesasaSDK\\": "src/"
-        }
-    },
     "authors": [
         {
             "name": "codexoft",
-            "email": "wainainamartin29@gmail.com"
+            "email": "wainainamartin29@gmail.com",
+            "role": "Developer"
         },
         {
             "name": "bitwise",
-            "email": "info@bitwise.co.ke"
+            "email": "info@bitwise.co.ke",
+            "role": "Organization"
         }
     ],
     "require": {
@@ -26,7 +33,42 @@
     },
     "require-dev": {
         "phpunit/phpunit": "^9.5",
-        "squizlabs/php_codesniffer": "^3.7"
+        "squizlabs/php_codesniffer": "^3.7",
+        "phpstan/phpstan": "^1.10",
+        "mockery/mockery": "^1.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Codexoft\\MobilesasaSDK\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Codexoft\\MobilesasaSDK\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "test-coverage": "phpunit --coverage-clover=coverage.xml",
+        "check-style": "phpcs src tests",
+        "fix-style": "phpcbf src tests",
+        "analyse": "phpstan analyse",
+        "all": [
+            "@check-style",
+            "@analyse",
+            "@test"
+        ]
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "phpstan/extension-installer": true
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "1.0-dev"
+        }
     },
     "minimum-stability": "stable",
     "prefer-stable": true
