@@ -1,0 +1,24 @@
+{
+    "name": "codexoft/mobilesasa-sdk",
+    "description": "Unofficial PHP SDK for Mobile Sasa's Communication Platform - Integrate bulk SMS, WhatsApp messaging, email services, USSD codes, SMS surveys, and sender ID management for comprehensive business communication solutions",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "codexoft\\MobilesasaSDK\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "codexoft",
+            "email": "wainainamartin29@gmail.com"
+        },
+        {
+            "name": "bitwise",
+            "email": "info@bitwise.co.ke"
+        }
+    ],
+    "minimum-stability": "dev", 
+    "prefer-stable": true,
+    "require": {}
+}
